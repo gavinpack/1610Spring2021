@@ -2,3 +2,4 @@
 
 Weather for Thursday, 86% chance of rain.
 Weather for Friday, 9% chance of rain.
+Weather for Sunday, 16% chance of snow.
