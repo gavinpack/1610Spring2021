@@ -8,7 +8,8 @@ public class EnumScript : MonoBehaviour
     {
         Direction myDirection;
         
-        myDirection = Direction.North;
+        //myDirection = Direction.North;
+        //Variable never used
     }
     
     Direction ReverseDirection (Direction dir)
