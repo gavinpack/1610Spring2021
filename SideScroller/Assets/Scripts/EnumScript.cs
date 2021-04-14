@@ -6,7 +6,8 @@ public class EnumScript : MonoBehaviour
 
     void Start () 
     {
-        Direction myDirection;
+        //Variable never used.
+        //Direction myDirection;
         
         //myDirection = Direction.North;
         //Variable never used
