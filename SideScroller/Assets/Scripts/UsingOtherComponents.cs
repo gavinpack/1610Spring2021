@@ -2,20 +2,18 @@ using UnityEngine;
 
 public class UsingOtherComponents : MonoBehaviour
 {
-    //Another and YetAnotherScript don't exist? Missing reference?? Causes serious error.
-    
     public GameObject otherGameObject;
     
     
-    //private AnotherScript anotherScript;
-    //private YetAnotherScript yetAnotherScript;
+    private AnotherScript anotherScript;
+    private YetAnotherScript yetAnotherScript;
     private BoxCollider boxCol;
     
     
     void Awake ()
     {
-        //anotherScript = GetComponent<AnotherScript>();
-        //yetAnotherScript = otherGameObject.GetComponent<YetAnotherScript>();
+        anotherScript = GetComponent<AnotherScript>();
+        yetAnotherScript = otherGameObject.GetComponent<YetAnotherScript>();
         boxCol = otherGameObject.GetComponent<BoxCollider>();
     }
     
@@ -23,7 +21,7 @@ public class UsingOtherComponents : MonoBehaviour
     void Start ()
     {
         boxCol.size = new Vector3(3,3,3);
-        //Debug.Log("The player's score is " + anotherScript.playerScore);
-        //Debug.Log("The player has died " + yetAnotherScript.numberOfPlayerDeaths + " times");
+        Debug.Log("The player's score is " + anotherScript.playerScore);
+        Debug.Log("The player has died " + yetAnotherScript.numberOfPlayerDeaths + " times");
     }
 }
